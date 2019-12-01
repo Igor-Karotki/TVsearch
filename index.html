@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/tv.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>TV-show search</title>
+</head>
+
+<body>
+
+    <header>
+        <form id="filterSort">
+            <div class="filter-block">
+                <span>Release year</span>
+                <input type="number" class="topInput" id="From" placeholder="From">
+                <input type="number" class="topInput" id="To" placeholder="To"></div>
+            <div class="filter-block">
+                <span>Rating</span>
+                <input type="number" class="topInput" id="RFrom" placeholder="From">
+                <input type="number" class="topInput" id="RTo" placeholder="To">
+                <input type="submit" id="topSubmit" class="topBtn" value="Submit" /></div>
+            <div class="sort-block">
+                <span>Sort by</span>
+                <input type="button" class="topBtn" value="Name" id="Title">
+                <input type="button" class="topBtn" value="Rating" id="imdbRating">
+                <input type="button" class="topBtn" value="Release date" id="Released"></div>
+        </form>
+    </header>
+
+    <div class="container">
+        <div class="search-form">
+            <h3 class="textTop">TV show search</h3>
+            <form id="search-form">
+                <input type="text" class="form-control" id="search-text" placeholder="Enter the title...">
+            </form>
+        </div>
+        <div id="movies"></div>
+        <div class="item"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
